@@ -1,0 +1,8 @@
+C:\Users\simba\source\repos\OnlineCV\OnlineCV\obj\Debug\net8.0\OnlineCV.csproj.AssemblyReference.cache
+C:\Users\simba\source\repos\OnlineCV\OnlineCV\obj\Debug\net8.0\OnlineCV.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\simba\source\repos\OnlineCV\OnlineCV\obj\Debug\net8.0\OnlineCV.AssemblyInfoInputs.cache
+C:\Users\simba\source\repos\OnlineCV\OnlineCV\obj\Debug\net8.0\OnlineCV.AssemblyInfo.cs
+C:\Users\simba\source\repos\OnlineCV\OnlineCV\obj\Debug\net8.0\OnlineCV.csproj.CoreCompileInputs.cache
+C:\Users\simba\source\repos\OnlineCV\OnlineCV\obj\Debug\net8.0\OnlineCV.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\simba\source\repos\OnlineCV\OnlineCV\obj\Debug\net8.0\OnlineCV.RazorAssemblyInfo.cache
+C:\Users\simba\source\repos\OnlineCV\OnlineCV\obj\Debug\net8.0\OnlineCV.RazorAssemblyInfo.cs
