@@ -1,0 +1,21 @@
+﻿@model OnlineCV.Models.CVModel
+
+@if (Model != null)
+{
+    <header>
+        <div class="header-container">
+            <h1>@Model.FullName</h1>
+            <h2>@Model.ProfessionalTitle</h2>
+            <p>@Model.Email | @Model.Phone | @Model.Location</p>
+            <p>LinkedIn: <a href="@Model.LinkedIn">@Model.LinkedIn</a></p>
+        </div>
+    </header>
+}
+else
+{
+    <header>
+        <div class="header-container">
+            <p>No CV data available.</p>
+        </div>
+    </header>
+}

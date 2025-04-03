@@ -1,0 +1,57 @@
+﻿@model OnlineCV.Models.CVModel
+
+
+@{
+    ViewData["Title"] = "Home";
+}
+
+<div class="text-center">
+    <h2>@Model.FullName</h2>
+    <h3>@Model.ProfessionalTitle</h3>
+    <p>@Model.Email | @Model.Phone | @Model.Location</p>
+    <p>LinkedIn: <a href="@Model.LinkedIn">@Model.LinkedIn</a></p>
+</div>
+
+<h4>Professional Summary</h4>
+<p>@Model.Summary</p>
+
+<h4>Work Experience</h4>
+<ul class="list-group mb-4">
+    @foreach (var work in Model.WorkExperiences)
+    {
+        <li class="list-group-item">
+            <strong>@work.JobTitle</strong> at @work.CompanyName <br />
+            @work.StartDate.ToString("MMMM yyyy") - @(work.EndDate?.ToString("MMMM yyyy") ?? "Present") <br />
+            <p>@work.Responsibilities</p>
+        </li>
+    }
+</ul>
+
+<h4>Education</h4>
+<ul class="list-group mb-4">
+    @foreach (var edu in Model.Educations)
+    {
+        <li class="list-group-item">
+            @edu.Degree from @edu.Institution (@edu.CompletionYear)
+        </li>
+    }
+</ul>
+
+<h4>Technical Skills</h4>
+<ul class="list-group mb-4">
+    @foreach (var skill in Model.TechnicalSkills)
+    {
+        <li class="list-group-item">@skill.SkillName</li>
+    }
+</ul>
+
+<h4>Projects</h4>
+<ul class="list-group">
+    @foreach (var project in Model.Projects)
+    {
+        <li class="list-group-item">
+            <strong>@project.Name</strong> - @project.Description <br />
+            GitHub: <a href="@project.GitHubLink">@project.GitHubLink</a>
+        </li>
+    }
+</ul>

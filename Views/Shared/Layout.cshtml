@@ -1,0 +1,20 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - OnlineCV</title>
+    <link href="~/css/site.css" rel="stylesheet" />
+</head>
+<body>
+    @await Html.PartialAsync("_Header")  <!-- Ensures header is rendered -->
+
+    <div class="container">
+        @RenderBody()
+    </div>
+
+    <footer>
+        <p>&copy; 2025 OnlineCV</p>
+    </footer>
+</body>
+</html>
